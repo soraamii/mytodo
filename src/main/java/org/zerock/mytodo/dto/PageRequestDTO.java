@@ -20,4 +20,13 @@ private int page = 1;
 @Builder.Default
 private int size = 10;
     
+
+public void setPage(int page) {
+    if(page <= 0) {
+        this.page = 1;
+    } else {
+        this.page = page;
+    }
+}
+
 }
