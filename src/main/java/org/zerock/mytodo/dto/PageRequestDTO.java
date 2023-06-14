@@ -29,4 +29,13 @@ public void setPage(int page) {
     }
 }
 
+public void setSize() {
+    if(size > 100 || size < 0) {
+        this.size = 10;
+    }else {
+        this.size = size;
+    }
+    
+}
+
 }
